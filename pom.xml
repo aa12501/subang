@@ -11,6 +11,7 @@
         <module>subang_common</module>
         <module>subang_9001_article</module>
         <module>subang_9002_qa</module>
+        <module>subang_9003_lost</module>
     </modules>
     <packaging>pom</packaging>
 

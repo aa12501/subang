@@ -37,7 +37,7 @@ public class ProblemController {
         return new Result(true, StatusCode.OK, "修改成功");
     }
 
-    @RequestMapping(value = "/{problem}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{problemid}", method = RequestMethod.DELETE)
     public Result deleteById(@PathVariable String problemid){
         problemService.deleteById(problemid);
         return new Result(true, StatusCode.OK, "删除成功");

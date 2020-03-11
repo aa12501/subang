@@ -37,7 +37,7 @@ public class ReplyController {
         return new Result(true, StatusCode.OK, "修改成功");
     }
 
-    @RequestMapping(value = "/{reply}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{replyid}", method = RequestMethod.DELETE)
     public Result deleteById(@PathVariable String replyid){
         replyService.deleteById(replyid);
         return new Result(true, StatusCode.OK, "删除成功");

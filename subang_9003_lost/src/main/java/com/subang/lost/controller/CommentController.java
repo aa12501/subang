@@ -1,7 +1,7 @@
-package com.subang.qa.controller;
+package com.subang.lost.controller;
 
-import com.subang.qa.pojo.Comment;
-import com.subang.qa.service.CommentService;
+import com.subang.lost.pojo.Comment;
+import com.subang.lost.service.CommentService;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +37,7 @@ public class CommentController {
         return new Result(true, StatusCode.OK, "修改成功");
     }
 
-    @RequestMapping(value = "/{commentid}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{comment}", method = RequestMethod.DELETE)
     public Result deleteById(@PathVariable String commentid){
         commentService.deleteById(commentid);
         return new Result(true, StatusCode.OK, "删除成功");

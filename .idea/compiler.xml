@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="subang_9003_lost" />
         <module name="subang_9002_qa" />
         <module name="subang_9001_article" />
         <module name="subang_common" />
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="subang_9001_article" options="-parameters" />
       <module name="subang_9002_qa" options="-parameters" />
+      <module name="subang_9003_lost" options="-parameters" />
       <module name="subang_common" options="-parameters" />
     </option>
   </component>

@@ -1,0 +1,13 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: subang-9003-lost
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.245.3:3306/subang_lost?characterEncoding=utf-8
+    username: root
+    password: 123123
+  jpa:
+    database: mysql
+    show-sql: true

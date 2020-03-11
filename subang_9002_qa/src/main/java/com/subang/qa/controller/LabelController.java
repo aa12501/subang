@@ -37,7 +37,7 @@ public class LabelController {
         return new Result(true, StatusCode.OK, "修改成功");
     }
 
-    @RequestMapping(value = "/{label}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{labelid}", method = RequestMethod.DELETE)
     public Result deleteById(@PathVariable String labelid){
         labelService.deleteById(labelid);
         return new Result(true, StatusCode.OK, "删除成功");
