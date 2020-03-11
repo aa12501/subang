@@ -1,4 +1,4 @@
-package com.subang.article.pojo;
+package com.subang.qa.pojo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,13 +7,14 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "tb_article")
-public class Article implements Serializable {
+@Table(name = "tb_problem")
+public class Problem implements Serializable {
     @Id
     private String id;
     private String userid;
     private String usernickname;
     private Integer anonymous;
+    private Integer solve;
     private Integer state;
     private String statemsg;
     private String labelid;
@@ -22,17 +23,9 @@ public class Article implements Serializable {
     private Date createtime;
     private Date modifiedtime;
     private Long thumbupcount;
-    private Long commentcount;
+    private Long replycount;
     private Long visitcount;
-
-
-    public String getLabelid() {
-        return labelid;
-    }
-
-    public void setLabelid(String labelid) {
-        this.labelid = labelid;
-    }
+    private Long carecount;
 
     public String getId() {
         return id;
@@ -66,6 +59,14 @@ public class Article implements Serializable {
         this.anonymous = anonymous;
     }
 
+    public Integer getSolve() {
+        return solve;
+    }
+
+    public void setSolve(Integer solve) {
+        this.solve = solve;
+    }
+
     public Integer getState() {
         return state;
     }
@@ -80,6 +81,14 @@ public class Article implements Serializable {
 
     public void setStatemsg(String statemsg) {
         this.statemsg = statemsg;
+    }
+
+    public String getLabelid() {
+        return labelid;
+    }
+
+    public void setLabelid(String labelid) {
+        this.labelid = labelid;
     }
 
     public String getTitle() {
@@ -122,12 +131,12 @@ public class Article implements Serializable {
         this.thumbupcount = thumbupcount;
     }
 
-    public Long getCommentcount() {
-        return commentcount;
+    public Long getReplycount() {
+        return replycount;
     }
 
-    public void setCommentcount(Long commentcount) {
-        this.commentcount = commentcount;
+    public void setReplycount(Long replycount) {
+        this.replycount = replycount;
     }
 
     public Long getVisitcount() {
@@ -136,5 +145,13 @@ public class Article implements Serializable {
 
     public void setVisitcount(Long visitcount) {
         this.visitcount = visitcount;
+    }
+
+    public Long getCarecount() {
+        return carecount;
+    }
+
+    public void setCarecount(Long carecount) {
+        this.carecount = carecount;
     }
 }

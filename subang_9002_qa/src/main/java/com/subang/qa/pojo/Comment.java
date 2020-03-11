@@ -1,4 +1,4 @@
-package com.subang.article.pojo;
+package com.subang.qa.pojo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,8 +7,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "tb_article")
-public class Article implements Serializable {
+@Table(name = "tb_comment")
+public class Comment implements Serializable {
     @Id
     private String id;
     private String userid;
@@ -16,23 +16,11 @@ public class Article implements Serializable {
     private Integer anonymous;
     private Integer state;
     private String statemsg;
-    private String labelid;
-    private String title;
+    private String parentid;
+    private String parenttype;
     private String content;
     private Date createtime;
     private Date modifiedtime;
-    private Long thumbupcount;
-    private Long commentcount;
-    private Long visitcount;
-
-
-    public String getLabelid() {
-        return labelid;
-    }
-
-    public void setLabelid(String labelid) {
-        this.labelid = labelid;
-    }
 
     public String getId() {
         return id;
@@ -82,12 +70,20 @@ public class Article implements Serializable {
         this.statemsg = statemsg;
     }
 
-    public String getTitle() {
-        return title;
+    public String getParentid() {
+        return parentid;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setParentid(String parentid) {
+        this.parentid = parentid;
+    }
+
+    public String getParenttype() {
+        return parenttype;
+    }
+
+    public void setParenttype(String parenttype) {
+        this.parenttype = parenttype;
     }
 
     public String getContent() {
@@ -112,29 +108,5 @@ public class Article implements Serializable {
 
     public void setModifiedtime(Date modifiedtime) {
         this.modifiedtime = modifiedtime;
-    }
-
-    public Long getThumbupcount() {
-        return thumbupcount;
-    }
-
-    public void setThumbupcount(Long thumbupcount) {
-        this.thumbupcount = thumbupcount;
-    }
-
-    public Long getCommentcount() {
-        return commentcount;
-    }
-
-    public void setCommentcount(Long commentcount) {
-        this.commentcount = commentcount;
-    }
-
-    public Long getVisitcount() {
-        return visitcount;
-    }
-
-    public void setVisitcount(Long visitcount) {
-        this.visitcount = visitcount;
     }
 }

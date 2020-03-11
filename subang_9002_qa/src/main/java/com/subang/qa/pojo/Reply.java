@@ -1,4 +1,4 @@
-package com.subang.article.pojo;
+package com.subang.qa.pojo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,8 +7,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "tb_article")
-public class Article implements Serializable {
+@Table(name = "tb_reply")
+public class Reply implements Serializable {
     @Id
     private String id;
     private String userid;
@@ -16,23 +16,11 @@ public class Article implements Serializable {
     private Integer anonymous;
     private Integer state;
     private String statemsg;
-    private String labelid;
-    private String title;
     private String content;
     private Date createtime;
     private Date modifiedtime;
     private Long thumbupcount;
-    private Long commentcount;
-    private Long visitcount;
-
-
-    public String getLabelid() {
-        return labelid;
-    }
-
-    public void setLabelid(String labelid) {
-        this.labelid = labelid;
-    }
+    private Long dislikecount;
 
     public String getId() {
         return id;
@@ -82,14 +70,6 @@ public class Article implements Serializable {
         this.statemsg = statemsg;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getContent() {
         return content;
     }
@@ -122,19 +102,11 @@ public class Article implements Serializable {
         this.thumbupcount = thumbupcount;
     }
 
-    public Long getCommentcount() {
-        return commentcount;
+    public Long getDislikecount() {
+        return dislikecount;
     }
 
-    public void setCommentcount(Long commentcount) {
-        this.commentcount = commentcount;
-    }
-
-    public Long getVisitcount() {
-        return visitcount;
-    }
-
-    public void setVisitcount(Long visitcount) {
-        this.visitcount = visitcount;
+    public void setDislikecount(Long dislikecount) {
+        this.dislikecount = dislikecount;
     }
 }
