@@ -10,6 +10,7 @@
         <module name="subang_9002_qa" />
         <module name="subang_9001_article" />
         <module name="subang_common" />
+        <module name="subang_9004_activity" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="subang_9001_article" options="-parameters" />
       <module name="subang_9002_qa" options="-parameters" />
       <module name="subang_9003_lost" options="-parameters" />
+      <module name="subang_9004_activity" options="-parameters" />
       <module name="subang_common" options="-parameters" />
     </option>
   </component>
