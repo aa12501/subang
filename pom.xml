@@ -13,6 +13,7 @@
         <module>subang_9002_qa</module>
         <module>subang_9003_lost</module>
         <module>subang_9004_activity</module>
+        <module>subang_9005_vote</module>
     </modules>
     <packaging>pom</packaging>
 

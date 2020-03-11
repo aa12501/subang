@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff33cb9-56b8-487a-bce5-f5fe3bfd65d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/ActivityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/controller/BaseExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/controller/LabelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/controller/LostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/dao/ActivityDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/dao/LabelDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/pojo/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/pojo/Label.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/service/LabelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/service/LostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/VoteApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/controller/BaseExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/controller/SelectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/controller/VoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/dao/SelectionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/dao/VoteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Selection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Vote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/service/SelectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/service/VoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/ActivityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/ActivityApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +63,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -76,11 +77,11 @@
       <recent name="com.subang.qa.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Develop\Projects\subang_dev_parent\subang_9005_vote\src\main\java\com\subang\vote" />
+      <recent name="C:\Develop\Projects\subang_dev_parent\subang_9005_vote\src\main\resources" />
+      <recent name="C:\Develop\Projects\subang_dev_parent\subang_9005_vote" />
       <recent name="C:\Develop\Projects\subang_dev_parent\subang_9004_activity\src\main\java\com\subang\activity" />
       <recent name="C:\Develop\Projects\subang_dev_parent\subang_9004_activity\src\main\resources" />
-      <recent name="C:\Develop\Projects\subang_dev_parent\subang_9004_activity" />
-      <recent name="C:\Develop\Projects\subang_dev_parent\subang_9003_lost\src\main\resources" />
-      <recent name="C:\Develop\Projects\subang_dev_parent\subang_9003_lost\src\main\java\com\subang\lost" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,7 +96,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LostApplication">
+  <component name="RunManager" selected="Spring Boot.VoteApplication">
+    <configuration name="ActivityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="subang_9004_activity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.subang.activity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.subang.activity.ActivityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArticleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="subang_9001_article" />
       <extension name="coverage">
@@ -135,8 +149,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VoteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="subang_9005_vote" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.subang.vote.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.subang.vote.VoteApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.VoteApplication" />
+        <item itemvalue="Spring Boot.ActivityApplication" />
         <item itemvalue="Spring Boot.LostApplication" />
         <item itemvalue="Spring Boot.QaApplication" />
         <item itemvalue="Spring Boot.ArticleApplication" />
@@ -153,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583895798133</updated>
-      <workItem from="1583895801407" duration="19982000" />
+      <workItem from="1583895801407" duration="21327000" />
     </task>
     <task id="LOCAL-00001" summary="问答模块增删改查完成">
       <created>1583917918774</created>
@@ -169,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583919500051</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="活动模块增删改查完成">
+      <created>1583926307380</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583926307380</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +225,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="问答模块增删改查完成" />
     <MESSAGE value="失物招领模块增删改查完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="失物招领模块增删改查完成" />
+    <MESSAGE value="活动模块增删改查完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="活动模块增删改查完成" />
   </component>
 </project>
