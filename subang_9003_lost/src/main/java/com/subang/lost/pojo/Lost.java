@@ -13,15 +13,15 @@ public class Lost implements Serializable {
     private String id;
     private String userid;
     private String usernickname;
-    private Integer anonymous;
-    private Integer solve;
     private Integer state;
     private String statemsg;
+    private String title;
     private String content;
+    private String label;
     private Date starttime;
     private Date endtime;
     private Date createtime;
-    private Date modifiedtime;
+    private String place;
     private Long replycount;
     private Long visitcount;
 
@@ -49,22 +49,6 @@ public class Lost implements Serializable {
         this.usernickname = usernickname;
     }
 
-    public Integer getAnonymous() {
-        return anonymous;
-    }
-
-    public void setAnonymous(Integer anonymous) {
-        this.anonymous = anonymous;
-    }
-
-    public Integer getSolve() {
-        return solve;
-    }
-
-    public void setSolve(Integer solve) {
-        this.solve = solve;
-    }
-
     public Integer getState() {
         return state;
     }
@@ -81,12 +65,28 @@ public class Lost implements Serializable {
         this.statemsg = statemsg;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getContent() {
         return content;
     }
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
     }
 
     public Date getStarttime() {
@@ -113,12 +113,12 @@ public class Lost implements Serializable {
         this.createtime = createtime;
     }
 
-    public Date getModifiedtime() {
-        return modifiedtime;
+    public String getPlace() {
+        return place;
     }
 
-    public void setModifiedtime(Date modifiedtime) {
-        this.modifiedtime = modifiedtime;
+    public void setPlace(String place) {
+        this.place = place;
     }
 
     public Long getReplycount() {

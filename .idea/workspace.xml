@@ -2,23 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff33cb9-56b8-487a-bce5-f5fe3bfd65d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/VoteApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/controller/BaseExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/controller/SelectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/controller/VoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/dao/SelectionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/dao/VoteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Selection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Vote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/service/SelectionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/service/VoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/controller/CareController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/dao/CareDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Care.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/service/CareService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/controller/PicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/dao/PicDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/pojo/Pic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/service/PicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/controller/PicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/controller/SignupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/dao/SignupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/pojo/Pic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/pojo/Signup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/service/PicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/service/SignupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/controller/SignupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/dao/SignupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Signup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/service/SignupService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/ActivityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/ActivityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/controller/LabelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/dao/LabelDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/pojo/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/pojo/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/pojo/Label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/java/com/subang/article/service/LabelService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/controller/LabelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/dao/LabelDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/pojo/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/pojo/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/pojo/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/pojo/Label.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9001_article/target/classes/com/subang/article/service/LabelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9002_qa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9002_qa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Label.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/pojo/Reply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/service/LabelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9002_qa/src/main/java/com/subang/qa/service/LabelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/controller/CollectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/dao/CollectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/dao/PicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/pojo/Collect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/pojo/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/pojo/Lost.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/pojo/Lost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9003_lost/src/main/java/com/subang/lost/service/CollectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/controller/LabelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/dao/LabelDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/pojo/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/pojo/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/pojo/Label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9004_activity/src/main/java/com/subang/activity/service/LabelService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Selection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/pojo/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/service/SelectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/subang_9005_vote/src/main/java/com/subang/vote/service/SelectionService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,9 +114,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.subang.activity.controller" />
       <recent name="com.subang.activity.service" />
       <recent name="com.subang.activity.dao" />
-      <recent name="com.subang.activity.controller" />
       <recent name="com.subang.activity.pojo" />
       <recent name="com.subang.qa.controller" />
     </key>
@@ -96,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.VoteApplication">
+  <component name="RunManager" selected="Spring Boot.ArticleApplication">
     <configuration name="ActivityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="subang_9004_activity" />
       <extension name="coverage">
@@ -164,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ArticleApplication" />
         <item itemvalue="Spring Boot.VoteApplication" />
         <item itemvalue="Spring Boot.ActivityApplication" />
         <item itemvalue="Spring Boot.LostApplication" />
         <item itemvalue="Spring Boot.QaApplication" />
-        <item itemvalue="Spring Boot.ArticleApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +226,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583895798133</updated>
-      <workItem from="1583895801407" duration="21327000" />
+      <workItem from="1583895801407" duration="21444000" />
+      <workItem from="1583983426590" duration="5107000" />
+      <workItem from="1584327802907" duration="1785000" />
+      <workItem from="1584415254435" duration="1194000" />
+      <workItem from="1584610615921" duration="952000" />
+      <workItem from="1585020629996" duration="1198000" />
+      <workItem from="1585106619111" duration="11634000" />
+      <workItem from="1585125691952" duration="4655000" />
     </task>
     <task id="LOCAL-00001" summary="问答模块增删改查完成">
       <created>1583917918774</created>
@@ -205,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583926307380</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="投票模块增删改查完成">
+      <created>1583927564782</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583927564782</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +274,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -226,6 +286,7 @@
     <MESSAGE value="问答模块增删改查完成" />
     <MESSAGE value="失物招领模块增删改查完成" />
     <MESSAGE value="活动模块增删改查完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="活动模块增删改查完成" />
+    <MESSAGE value="投票模块增删改查完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="投票模块增删改查完成" />
   </component>
 </project>

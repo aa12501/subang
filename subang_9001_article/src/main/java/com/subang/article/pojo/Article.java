@@ -13,26 +13,14 @@ public class Article implements Serializable {
     private String id;
     private String userid;
     private String usernickname;
-    private Integer anonymous;
     private Integer state;
     private String statemsg;
-    private String labelid;
     private String title;
     private String content;
+    private String building;
     private Date createtime;
-    private Date modifiedtime;
-    private Long thumbupcount;
     private Long commentcount;
     private Long visitcount;
-
-
-    public String getLabelid() {
-        return labelid;
-    }
-
-    public void setLabelid(String labelid) {
-        this.labelid = labelid;
-    }
 
     public String getId() {
         return id;
@@ -56,14 +44,6 @@ public class Article implements Serializable {
 
     public void setUsernickname(String usernickname) {
         this.usernickname = usernickname;
-    }
-
-    public Integer getAnonymous() {
-        return anonymous;
-    }
-
-    public void setAnonymous(Integer anonymous) {
-        this.anonymous = anonymous;
     }
 
     public Integer getState() {
@@ -98,28 +78,20 @@ public class Article implements Serializable {
         this.content = content;
     }
 
+    public String getBuilding() {
+        return building;
+    }
+
+    public void setBuilding(String building) {
+        this.building = building;
+    }
+
     public Date getCreatetime() {
         return createtime;
     }
 
     public void setCreatetime(Date createtime) {
         this.createtime = createtime;
-    }
-
-    public Date getModifiedtime() {
-        return modifiedtime;
-    }
-
-    public void setModifiedtime(Date modifiedtime) {
-        this.modifiedtime = modifiedtime;
-    }
-
-    public Long getThumbupcount() {
-        return thumbupcount;
-    }
-
-    public void setThumbupcount(Long thumbupcount) {
-        this.thumbupcount = thumbupcount;
     }
 
     public Long getCommentcount() {

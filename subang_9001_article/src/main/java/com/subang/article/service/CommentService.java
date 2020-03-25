@@ -7,6 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import util.IdWorker;
@@ -14,6 +15,7 @@ import util.IdWorker;
 import javax.persistence.criteria.Predicate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @Service
 @Transactional
@@ -24,12 +26,20 @@ public class CommentService {
     @Autowired
     private IdWorker idWorker;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     public List<Comment> findAll() {
         return commentDao.findAll();
     }
 
     public Comment findById(String id) {
-        return commentDao.findById(id).get();
+        Comment comment = (Comment) redisTemplate.opsForValue().get("article_comment_" + id);
+        if (comment == null) {
+            comment = commentDao.findById(id).get();
+            redisTemplate.opsForValue().set("article_comment_" + id, comment, 1, TimeUnit.DAYS);
+        }
+        return comment;
     }
 
     public void save(Comment comment) {
@@ -39,6 +49,7 @@ public class CommentService {
 
     public void updateById(Comment comment, String id) {
         if (commentDao.findById(id).isPresent()) {
+            redisTemplate.delete("article_comment_" + id);
             commentDao.save(comment);
         } else {
             throw new RuntimeException("该评论不存在");
@@ -46,6 +57,7 @@ public class CommentService {
     }
 
     public void deleteById(String id) {
+        redisTemplate.delete("article_comment_" + id);
         commentDao.deleteById(id);
     }
 
@@ -58,14 +70,6 @@ public class CommentService {
             }
             if (comment.getContent() != null && !"".equals(comment.getContent())) {
                 Predicate predicate = criteriaBuilder.like(root.get("content").as(String.class), "%" + comment.getContent() + "%");
-                list.add(predicate);
-            }
-            if (comment.getParentid() != null && !"".equals(comment.getParentid())) {
-                Predicate predicate = criteriaBuilder.equal(root.get("parentid").as(String.class), comment.getParentid());
-                list.add(predicate);
-            }
-            if (comment.getParenttype() != null) {
-                Predicate predicate = criteriaBuilder.equal(root.get("parenttype").as(String.class), comment.getParenttype());
                 list.add(predicate);
             }
 
@@ -85,14 +89,6 @@ public class CommentService {
             }
             if (comment.getContent() != null && !"".equals(comment.getContent())) {
                 Predicate predicate = criteriaBuilder.like(root.get("content").as(String.class), "%" + comment.getContent() + "%");
-                list.add(predicate);
-            }
-            if (comment.getParentid() != null && !"".equals(comment.getParentid())) {
-                Predicate predicate = criteriaBuilder.equal(root.get("parentid").as(String.class), comment.getParentid());
-                list.add(predicate);
-            }
-            if (comment.getParenttype() != null) {
-                Predicate predicate = criteriaBuilder.equal(root.get("parenttype").as(String.class), comment.getParenttype());
                 list.add(predicate);
             }
 

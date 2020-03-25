@@ -7,6 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import util.IdWorker;
@@ -14,6 +15,7 @@ import util.IdWorker;
 import javax.persistence.criteria.Predicate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @Service
 @Transactional
@@ -24,12 +26,20 @@ public class ArticleService {
     @Autowired
     private IdWorker idWorker;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     public List<Article> findAll() {
         return articleDao.findAll();
     }
 
     public Article findById(String id) {
-        return articleDao.findById(id).get();
+        Article article = (Article) redisTemplate.opsForValue().get("article_" + id);
+        if (article == null) {
+            article = articleDao.findById(id).get();
+            redisTemplate.opsForValue().set("article_" + id, article, 1, TimeUnit.DAYS);
+        }
+        return article;
     }
 
     public void save(Article article) {
@@ -39,28 +49,30 @@ public class ArticleService {
 
     public void updateById(Article article, String id) {
         if (articleDao.findById(id).isPresent()) {
+            redisTemplate.delete("article_" + id);
             articleDao.save(article);
-        }else{
+        } else {
             throw new RuntimeException("该文章不存在");
         }
     }
 
-    public void deleteById(String id){
+    public void deleteById(String id) {
+        redisTemplate.delete("article_" + id);
         articleDao.deleteById(id);
     }
 
-    public List<Article> findSearch(Article article){
+    public List<Article> findSearch(Article article) {
         return articleDao.findAll((Specification<Article>) (root, criteriaQuery, criteriaBuilder) -> {
             List<Predicate> list = new ArrayList<>();
-            if (article.getUsernickname() != null && !"".equals(article.getUsernickname())){
+            if (article.getUsernickname() != null && !"".equals(article.getUsernickname())) {
                 Predicate predicate = criteriaBuilder.like(root.get("usernickname").as(String.class), "%" + article.getUsernickname() + "%");
                 list.add(predicate);
             }
-            if (article.getTitle() != null && !"".equals(article.getTitle())){
+            if (article.getTitle() != null && !"".equals(article.getTitle())) {
                 Predicate predicate = criteriaBuilder.like(root.get("title").as(String.class), "%" + article.getTitle() + "%");
                 list.add(predicate);
             }
-            if (article.getContent() != null && !"".equals(article.getContent())){
+            if (article.getContent() != null && !"".equals(article.getContent())) {
                 Predicate predicate = criteriaBuilder.like(root.get("content").as(String.class), "%" + article.getContent() + "%");
                 list.add(predicate);
             }
@@ -71,19 +83,19 @@ public class ArticleService {
         });
     }
 
-    public Page<Article> findSearchByPage(Article article, int page, int size){
-        Pageable pageable = PageRequest.of(page-1, size);
+    public Page<Article> findSearchByPage(Article article, int page, int size) {
+        Pageable pageable = PageRequest.of(page - 1, size);
         return articleDao.findAll((Specification<Article>) (root, criteriaQuery, criteriaBuilder) -> {
             List<Predicate> list = new ArrayList<>();
-            if (article.getUsernickname() != null && !"".equals(article.getUsernickname())){
+            if (article.getUsernickname() != null && !"".equals(article.getUsernickname())) {
                 Predicate predicate = criteriaBuilder.like(root.get("usernickname").as(String.class), "%" + article.getUsernickname() + "%");
                 list.add(predicate);
             }
-            if (article.getTitle() != null && !"".equals(article.getTitle())){
+            if (article.getTitle() != null && !"".equals(article.getTitle())) {
                 Predicate predicate = criteriaBuilder.like(root.get("title").as(String.class), "%" + article.getTitle() + "%");
                 list.add(predicate);
             }
-            if (article.getContent() != null && !"".equals(article.getContent())){
+            if (article.getContent() != null && !"".equals(article.getContent())) {
                 Predicate predicate = criteriaBuilder.like(root.get("content").as(String.class), "%" + article.getContent() + "%");
                 list.add(predicate);
             }

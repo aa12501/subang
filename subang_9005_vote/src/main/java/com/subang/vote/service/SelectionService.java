@@ -52,8 +52,8 @@ public class SelectionService {
     public List<Selection> findSearch(Selection selection){
         return selectionDao.findAll((Specification<Selection>) (root, criteriaQuery, criteriaBuilder) -> {
             List<Predicate> list = new ArrayList<>();
-            if (selection.getName() != null && !"".equals(selection.getName())){
-                Predicate predicate = criteriaBuilder.like(root.get("name").as(String.class), "%" + selection.getName() + "%");
+            if (selection.getContent() != null && !"".equals(selection.getContent())){
+                Predicate predicate = criteriaBuilder.like(root.get("name").as(String.class), "%" + selection.getContent() + "%");
                 list.add(predicate);
             }
             Predicate[] parr = new Predicate[list.size()];
@@ -66,8 +66,8 @@ public class SelectionService {
         Pageable pageable = PageRequest.of(page-1, size);
         return selectionDao.findAll((Specification<Selection>) (root, criteriaQuery, criteriaBuilder) -> {
             List<Predicate> list = new ArrayList<>();
-            if (selection.getName() != null && !"".equals(selection.getName())){
-                Predicate predicate = criteriaBuilder.like(root.get("name").as(String.class), "%" + selection.getName() + "%");
+            if (selection.getContent() != null && !"".equals(selection.getContent())){
+                Predicate predicate = criteriaBuilder.like(root.get("name").as(String.class), "%" + selection.getContent() + "%");
                 list.add(predicate);
             }
             Predicate[] parr = new Predicate[list.size()];

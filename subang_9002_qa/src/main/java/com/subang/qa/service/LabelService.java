@@ -3,6 +3,7 @@ package com.subang.qa.service;
 import com.subang.qa.dao.LabelDao;
 import com.subang.qa.pojo.Label;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import util.IdWorker;
@@ -17,6 +18,9 @@ public class LabelService {
 
     @Autowired
     private IdWorker idWorker;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     public List<Label> findAll(){
         return labelDao.findAll();

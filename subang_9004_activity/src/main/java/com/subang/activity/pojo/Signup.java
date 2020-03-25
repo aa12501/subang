@@ -1,4 +1,4 @@
-package com.subang.qa.pojo;
+package com.subang.activity.pojo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,16 +7,15 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "tb_comment")
-public class Comment implements Serializable {
+@Table(name = "tb_signup")
+public class Signup implements Serializable {
     @Id
     private String id;
+    private String activityid;
     private String userid;
     private String usernickname;
-    private Integer state;
+    private String state;
     private String statemsg;
-    private String replyid;
-    private String content;
     private Date createtime;
 
     public String getId() {
@@ -25,6 +24,14 @@ public class Comment implements Serializable {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getActivityid() {
+        return activityid;
+    }
+
+    public void setActivityid(String activityid) {
+        this.activityid = activityid;
     }
 
     public String getUserid() {
@@ -43,11 +50,11 @@ public class Comment implements Serializable {
         this.usernickname = usernickname;
     }
 
-    public Integer getState() {
+    public String getState() {
         return state;
     }
 
-    public void setState(Integer state) {
+    public void setState(String state) {
         this.state = state;
     }
 
@@ -57,22 +64,6 @@ public class Comment implements Serializable {
 
     public void setStatemsg(String statemsg) {
         this.statemsg = statemsg;
-    }
-
-    public String getReplyid() {
-        return replyid;
-    }
-
-    public void setReplyid(String replyid) {
-        this.replyid = replyid;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 
     public Date getCreatetime() {

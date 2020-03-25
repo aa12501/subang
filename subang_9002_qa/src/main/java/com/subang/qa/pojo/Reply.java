@@ -13,13 +13,13 @@ public class Reply implements Serializable {
     private String id;
     private String userid;
     private String usernickname;
-    private Integer anonymous;
     private Integer state;
     private String statemsg;
     private String content;
+    private String problemid;
     private Date createtime;
     private Date modifiedtime;
-    private Long thumbupcount;
+    private Long likecount;
     private Long dislikecount;
 
     public String getId() {
@@ -46,14 +46,6 @@ public class Reply implements Serializable {
         this.usernickname = usernickname;
     }
 
-    public Integer getAnonymous() {
-        return anonymous;
-    }
-
-    public void setAnonymous(Integer anonymous) {
-        this.anonymous = anonymous;
-    }
-
     public Integer getState() {
         return state;
     }
@@ -78,6 +70,14 @@ public class Reply implements Serializable {
         this.content = content;
     }
 
+    public String getProblemid() {
+        return problemid;
+    }
+
+    public void setProblemid(String problemid) {
+        this.problemid = problemid;
+    }
+
     public Date getCreatetime() {
         return createtime;
     }
@@ -94,12 +94,12 @@ public class Reply implements Serializable {
         this.modifiedtime = modifiedtime;
     }
 
-    public Long getThumbupcount() {
-        return thumbupcount;
+    public Long getLikecount() {
+        return likecount;
     }
 
-    public void setThumbupcount(Long thumbupcount) {
-        this.thumbupcount = thumbupcount;
+    public void setLikecount(Long likecount) {
+        this.likecount = likecount;
     }
 
     public Long getDislikecount() {

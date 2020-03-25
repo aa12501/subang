@@ -6,13 +6,13 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "tb_selection")
-public class Selection implements Serializable {
+@Table(name = "tb_signup")
+public class Signup implements Serializable {
     @Id
     private String id;
-    private String content;
+    private String userid;
     private String voteid;
-    private Long signupcount;
+    private String selectionid;
 
     public String getId() {
         return id;
@@ -22,12 +22,12 @@ public class Selection implements Serializable {
         this.id = id;
     }
 
-    public String getContent() {
-        return content;
+    public String getUserid() {
+        return userid;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 
     public String getVoteid() {
@@ -38,11 +38,11 @@ public class Selection implements Serializable {
         this.voteid = voteid;
     }
 
-    public Long getSignupcount(){
-        return signupcount;
+    public String getSelectionid() {
+        return selectionid;
     }
 
-    public void setSignupcount(Long signupcount){
-        this.signupcount = signupcount;
+    public void setSelectionid(String selectionid) {
+        this.selectionid = selectionid;
     }
 }

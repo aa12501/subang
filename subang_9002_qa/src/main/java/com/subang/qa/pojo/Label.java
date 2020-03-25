@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table(name = "tb_label")
@@ -11,10 +12,7 @@ public class Label implements Serializable {
     @Id
     private String id;
     private String name;
-    private Integer state;
-    private String statemsg;
-    private Long count;
-    private Long fans;
+    private Date createtime;
 
     public String getId() {
         return id;
@@ -32,35 +30,11 @@ public class Label implements Serializable {
         this.name = name;
     }
 
-    public Integer getState() {
-        return state;
+    public Date getCreatetime() {
+        return createtime;
     }
 
-    public void setState(Integer state) {
-        this.state = state;
-    }
-
-    public String getStatemsg() {
-        return statemsg;
-    }
-
-    public void setStatemsg(String statemsg) {
-        this.statemsg = statemsg;
-    }
-
-    public Long getCount() {
-        return count;
-    }
-
-    public void setCount(Long count) {
-        this.count = count;
-    }
-
-    public Long getFans() {
-        return fans;
-    }
-
-    public void setFans(Long fans) {
-        this.fans = fans;
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
     }
 }

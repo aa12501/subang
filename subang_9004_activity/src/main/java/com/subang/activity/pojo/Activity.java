@@ -13,13 +13,17 @@ public class Activity implements Serializable {
     private String id;
     private String userid;
     private String usernickname;
-    private Integer solve;
     private Integer state;
     private String statemsg;
     private String title;
     private String content;
-    private String area;
-    private String labelid;
+    private String examine;
+    private Long needcount;
+    private Date starttime;
+    private Date endtime;
+    private Date createtime;
+    private Long signupcount;
+    private Long visitcount;
 
     public String getId() {
         return id;
@@ -43,14 +47,6 @@ public class Activity implements Serializable {
 
     public void setUsernickname(String usernickname) {
         this.usernickname = usernickname;
-    }
-
-    public Integer getSolve() {
-        return solve;
-    }
-
-    public void setSolve(Integer solve) {
-        this.solve = solve;
     }
 
     public Integer getState() {
@@ -85,27 +81,19 @@ public class Activity implements Serializable {
         this.content = content;
     }
 
-    public String getArea() {
-        return area;
+    public String getExamine() {
+        return examine;
     }
 
-    public void setArea(String area) {
-        this.area = area;
+    public void setExamine(String examine) {
+        this.examine = examine;
     }
 
-    public String getLabelid() {
-        return labelid;
-    }
-
-    public void setLabelid(String labelid) {
-        this.labelid = labelid;
-    }
-
-    public Integer getNeedcount() {
+    public Long getNeedcount() {
         return needcount;
     }
 
-    public void setNeedcount(Integer needcount) {
+    public void setNeedcount(Long needcount) {
         this.needcount = needcount;
     }
 
@@ -133,14 +121,6 @@ public class Activity implements Serializable {
         this.createtime = createtime;
     }
 
-    public Date getModifiedtime() {
-        return modifiedtime;
-    }
-
-    public void setModifiedtime(Date modifiedtime) {
-        this.modifiedtime = modifiedtime;
-    }
-
     public Long getSignupcount() {
         return signupcount;
     }
@@ -156,12 +136,4 @@ public class Activity implements Serializable {
     public void setVisitcount(Long visitcount) {
         this.visitcount = visitcount;
     }
-
-    private Integer needcount;
-    private Date starttime;
-    private Date endtime;
-    private Date createtime;
-    private Date modifiedtime;
-    private Long signupcount;
-    private Long visitcount;
 }

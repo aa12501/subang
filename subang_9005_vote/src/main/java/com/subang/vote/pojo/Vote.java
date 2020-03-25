@@ -13,14 +13,10 @@ public class Vote implements Serializable {
     private String id;
     private String userid;
     private String usernickname;
-    private Integer solve;
     private Integer state;
     private String statemsg;
     private String title;
     private String content;
-    private Integer needcount;
-    private Date starttime;
-    private Date endtime;
     private Date createtime;
     private Long signupcount;
     private Long visitcount;
@@ -47,14 +43,6 @@ public class Vote implements Serializable {
 
     public void setUsernickname(String usernickname) {
         this.usernickname = usernickname;
-    }
-
-    public Integer getSolve() {
-        return solve;
-    }
-
-    public void setSolve(Integer solve) {
-        this.solve = solve;
     }
 
     public Integer getState() {
@@ -87,30 +75,6 @@ public class Vote implements Serializable {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public Integer getNeedcount() {
-        return needcount;
-    }
-
-    public void setNeedcount(Integer needcount) {
-        this.needcount = needcount;
-    }
-
-    public Date getStarttime() {
-        return starttime;
-    }
-
-    public void setStarttime(Date starttime) {
-        this.starttime = starttime;
-    }
-
-    public Date getEndtime() {
-        return endtime;
-    }
-
-    public void setEndtime(Date endtime) {
-        this.endtime = endtime;
     }
 
     public Date getCreatetime() {

@@ -15,11 +15,10 @@ public class Comment implements Serializable {
     private String usernickname;
     private Integer state;
     private String statemsg;
-    private String parentid;
-    private String parenttype;
+    private String lostid;
+    private String commentid;
     private String content;
     private Date createtime;
-    private Date modifiedtime;
 
     public String getId() {
         return id;
@@ -61,20 +60,20 @@ public class Comment implements Serializable {
         this.statemsg = statemsg;
     }
 
-    public String getParentid() {
-        return parentid;
+    public String getLostid() {
+        return lostid;
     }
 
-    public void setParentid(String parentid) {
-        this.parentid = parentid;
+    public void setLostid(String lostid) {
+        this.lostid = lostid;
     }
 
-    public String getParenttype() {
-        return parenttype;
+    public String getCommentid() {
+        return commentid;
     }
 
-    public void setParenttype(String parenttype) {
-        this.parenttype = parenttype;
+    public void setCommentid(String commentid) {
+        this.commentid = commentid;
     }
 
     public String getContent() {
@@ -91,13 +90,5 @@ public class Comment implements Serializable {
 
     public void setCreatetime(Date createtime) {
         this.createtime = createtime;
-    }
-
-    public Date getModifiedtime() {
-        return modifiedtime;
-    }
-
-    public void setModifiedtime(Date modifiedtime) {
-        this.modifiedtime = modifiedtime;
     }
 }

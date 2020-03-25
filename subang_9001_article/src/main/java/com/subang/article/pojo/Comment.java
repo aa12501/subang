@@ -13,16 +13,10 @@ public class Comment implements Serializable {
     private String id;
     private String userid;
     private String usernickname;
-    private Integer anonymous;
     private Integer state;
     private String statemsg;
     private String content;
-    private String parentid;
-    private Integer parenttype;
     private Date createtime;
-    private Date modifiedtime;
-    private Long thumbupcount;
-    private Long dislikecount;
 
     public String getId() {
         return id;
@@ -46,14 +40,6 @@ public class Comment implements Serializable {
 
     public void setUsernickname(String usernickname) {
         this.usernickname = usernickname;
-    }
-
-    public Integer getAnonymous() {
-        return anonymous;
-    }
-
-    public void setAnonymous(Integer anonymous) {
-        this.anonymous = anonymous;
     }
 
     public Integer getState() {
@@ -80,22 +66,6 @@ public class Comment implements Serializable {
         this.content = content;
     }
 
-    public String getParentid() {
-        return parentid;
-    }
-
-    public void setParentid(String parentid) {
-        this.parentid = parentid;
-    }
-
-    public Integer getParenttype() {
-        return parenttype;
-    }
-
-    public void setParenttype(Integer parenttype) {
-        this.parenttype = parenttype;
-    }
-
     public Date getCreatetime() {
         return createtime;
     }
@@ -103,29 +73,4 @@ public class Comment implements Serializable {
     public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
-
-    public Date getModifiedtime() {
-        return modifiedtime;
-    }
-
-    public void setModifiedtime(Date modifiedtime) {
-        this.modifiedtime = modifiedtime;
-    }
-
-    public Long getThumbupcount() {
-        return thumbupcount;
-    }
-
-    public void setThumbupcount(Long thumbupcount) {
-        this.thumbupcount = thumbupcount;
-    }
-
-    public Long getDislikecount() {
-        return dislikecount;
-    }
-
-    public void setDislikecount(Long dislikecount) {
-        this.dislikecount = dislikecount;
-    }
-
 }

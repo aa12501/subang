@@ -13,8 +13,6 @@ public class Problem implements Serializable {
     private String id;
     private String userid;
     private String usernickname;
-    private Integer anonymous;
-    private Integer solve;
     private Integer state;
     private String statemsg;
     private String labelid;
@@ -22,7 +20,6 @@ public class Problem implements Serializable {
     private String content;
     private Date createtime;
     private Date modifiedtime;
-    private Long thumbupcount;
     private Long replycount;
     private Long visitcount;
     private Long carecount;
@@ -49,22 +46,6 @@ public class Problem implements Serializable {
 
     public void setUsernickname(String usernickname) {
         this.usernickname = usernickname;
-    }
-
-    public Integer getAnonymous() {
-        return anonymous;
-    }
-
-    public void setAnonymous(Integer anonymous) {
-        this.anonymous = anonymous;
-    }
-
-    public Integer getSolve() {
-        return solve;
-    }
-
-    public void setSolve(Integer solve) {
-        this.solve = solve;
     }
 
     public Integer getState() {
@@ -121,14 +102,6 @@ public class Problem implements Serializable {
 
     public void setModifiedtime(Date modifiedtime) {
         this.modifiedtime = modifiedtime;
-    }
-
-    public Long getThumbupcount() {
-        return thumbupcount;
-    }
-
-    public void setThumbupcount(Long thumbupcount) {
-        this.thumbupcount = thumbupcount;
     }
 
     public Long getReplycount() {
